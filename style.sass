@@ -1,0 +1,1370 @@
+@import "mixins"
+    
+*  
+    margin: 0 
+    padding: 0 
+ 
+
+body  
+    font-family: 'Lato' 
+ 
+
+.center  
+    padding: 0 calc(50% - 570px) 
+ 
+
+a  
+    text-decoration: none 
+ 
+
+.header  
+    height: 100px 
+    background-color: #ffffff 
+    border: 1px solid #ececec 
+    box-shadow: 0px 0px 10px 0px #ececec 
+    display: flex 
+    justify-content: space-between 
+    align-items: center 
+ 
+
+.header__left,
+.header__right,
+.header__form 
+    display: flex 
+    align-items: center 
+ 
+
+.header__cart  
+    margin-right: 26px 
+ 
+
+.logo  
+    display: flex 
+    align-items: center 
+    margin-right: 37px 
+ 
+
+.logo__img  
+    margin-right: 13px 
+ 
+
+.menu  
+    list-style-type: none 
+    display: flex 
+    justify-content: center 
+ 
+
+.menu__link  
+    padding: 20px 
+    display: block 
+ 
+
+.promo  
+    height: 614px 
+    background-color: #e8e8e8 
+    background-image: url(img/promo-back.png) 
+    background-position: center -51px 
+    background-repeat: no-repeat 
+ 
+
+.promo__content  
+    margin-top: 224px 
+    float: left 
+    border-left: 12px solid #f16d7f 
+    padding-left: 12px 
+ 
+
+.promo__h1  
+    font-size: 60px 
+    font-weight: 900 
+    color: #222222 
+    letter-spacing: 0.03em 
+    line-height: 45px 
+    margin-bottom: 12px 
+ 
+
+.promo__h2  
+    font-size: 40px 
+    font-weight: 900 
+    color: #222222 
+    letter-spacing: 0.03em 
+    line-height: 33px 
+ 
+
+.content-block 
+    height: 823px 
+    display: flex 
+    justify-content: center 
+    margin-top: 98px 
+    margin-left: 230px 
+    margin-right: 230px 
+    
+    
+    
+ 
+
+.content-block-left, .content-block-right 
+    outline: 1px solid #ffffff 
+        
+ 
+
+
+.content-block-left-big, .content-block-right-big  
+    position: relative 
+    height: 542px 
+    width: 560px 
+ 
+
+.content-block-left-small, .content-block-right-small 
+    position: relative 
+    height: 261px 
+    width: 560px 
+ 
+
+.content-block-left-big 
+    background-image: url(img/block_left1.png)  
+    margin-bottom: 20px 
+    
+ 
+
+.content-block-left-small 
+    background-image: url(img/block_left2.png)  
+ 
+
+.content-block-right-big 
+    background-image: url(img/block_right2.png)  
+ 
+
+.content-block-right-small 
+    background-image: url(img/block_right1.png)  
+    margin-bottom: 20px 
+    
+ 
+
+.content-block-left 
+    margin-right: 20px 
+ 
+
+.content-block-left-text1 
+    background: #ffffff 
+    height: 82px 
+    width: 175px 
+ 
+
+.content-block-left-text2 
+    background: #ffffff 
+    height: 82px 
+    width: 225px 
+ 
+
+.content-block-left-text3 
+    background: #ffffff 
+    height: 82px 
+    width: 162px 
+ 
+
+.content-block-left-text4 
+    background: #ffffff 
+    height: 82px 
+    width: 180px 
+ 
+
+.content-block-text-black 
+    font-size: 18px 
+    font-weight: 900 
+    color: rgba(34, 34, 34, 1) 
+    letter-spacing: 0.03em 
+    text-transform: uppercase 
+    
+ 
+
+.content-block-text-red 
+    font-size: 30px 
+    font-weight: 900 
+    color: rgba(241, 109, 127, 1) 
+    letter-spacing: 0.03em 
+    text-transform: uppercase 
+ 
+
+.content-block-text 
+    padding-top: 12px 
+    padding-left: 19px 
+ 
+
+.content-block-text-padding 
+    position: absolute 
+    margin-top: 26px 
+ 
+
+
+.content-product-block 
+    float: left 
+    justify-content: center 
+    height: 372px 
+    width: 261px 
+    border: 1px solid #ffffff 
+    margin-top: 30px 
+    position: relative 
+ 
+
+.content-header-text 
+    justify-content: center 
+    text-align: center 
+    margin-top: 85px 
+    margin-bottom: 30px 
+ 
+
+
+.product  
+    width: 263px 
+    margin-bottom: 39px 
+    position: relative 
+ 
+
+.product-box  
+    display: flex 
+    flex-wrap: wrap 
+    justify-content: space-between 
+ 
+
+.product:hover  
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16) 
+ 
+
+.product:hover .product__img  
+    filter: brightness(40%) 
+ 
+
+.product:hover .product__add  
+    display: flex 
+ 
+
+.product__content  
+    padding: 16px 
+ 
+
+.product__img  
+    width: 100% 
+ 
+
+.product__name  
+    font-size: 13px 
+    color: #222222 
+    text-transform: uppercase 
+ 
+
+.product__price  
+    font-size: 16px 
+    font-weight: bold 
+    color: #f16d7f 
+    text-transform: uppercase 
+    margin-top: 16px 
+ 
+
+.product__add  
+    font-size: 13px 
+    font-weight: bold 
+    color: #ffffff 
+    height: 39px 
+    width: 123px 
+    border: 1px solid #ffffff 
+    display: none 
+    align-items: center 
+    justify-content: center 
+    position: absolute 
+    top: 97px 
+    left: 70px 
+ 
+
+.product__add:hover  
+    box-shadow: 0 0 6px #fff 
+ 
+
+
+.logo span::first-letter 
+    font-family: 'Lato' 
+    font-size: 27px 
+    font-weight: 900 
+    color: rgba(241, 109, 127, 1) 
+    text-align: center 
+    letter-spacing: 0.03em 
+    line-height: 32px 
+    text-transform: uppercase 
+ 
+
+.logo 
+    font-family: 'Lato' 
+    font-size: 27px 
+    font-weight: 300 
+    color: rgba(34, 34, 34, 1) 
+    text-align: center 
+    letter-spacing: 0.03em 
+    line-height: 32px 
+    text-transform: uppercase 
+ 
+
+.browse 
+    height: 36px 
+    width: 85px 
+    border: 1px solid rgba(230, 230, 230, 1) 
+    border-radius: 3px 0px 0px 3px 
+    background-image: -webkit-linear-gradient(180deg, rgba(249, 249, 249, 1) 0%, rgba(245, 245, 245, 1) 100%) 
+    background-image: -moz-linear-gradient(180deg, rgba(249, 249, 249, 1) 0%, rgba(245, 245, 245, 1) 100%) 
+    background-image: -o-linear-gradient(180deg, rgba(249, 249, 249, 1) 0%, rgba(245, 245, 245, 1) 100%) 
+    background-image: linear-gradient(180deg, rgba(249, 249, 249, 1) 0%, rgba(245, 245, 245, 1) 100%) 
+    font-family: 'Lato' 
+    font-size: 14px 
+    font-weight: 300 
+    color: rgba(34, 34, 34, 1) 
+    text-align: right 
+    letter-spacing: 0.03em 
+    line-height: 32px 
+    
+ 
+
+.browse-link 
+    height: 6px 
+    width: 9px 
+    font-family: 'FontAwesome' 
+    font-size: 14px 
+    color: rgba(131, 131, 131, 1) 
+    text-align: right 
+    letter-spacing: 0.03em 
+    line-height: 36px 
+    margin-right: 7px 
+    margin-left: 5px 
+ 
+
+.header__form input 
+    height: 36px 
+    width: 301px 
+    background-color: rgba(255, 255, 255, 1) 
+    border: 1px solid rgba(230, 230, 230, 1) 
+    border-radius: 0px 3px 3px 0px 
+    padding-left: 16px 
+ 
+
+.browse span 
+    padding-top: 1px 
+ 
+
+.header__form input::placeholder 
+    font-family: 'Lato' 
+    font-size: 14px 
+    font-weight: 300 
+    color: rgba(164, 164, 164, 1) 
+    text-align: left 
+    letter-spacing: 0.03em 
+    line-height: 32px 
+    
+ 
+
+
+.search 
+    height: 38px 
+    width: 36px 
+    background-color: rgba(255, 255, 255, 1) 
+    border: 1px solid rgba(230, 230, 230, 1) 
+    border-radius: 0px 3px 3px 0px 
+ 
+
+
+
+.button 
+    height: 38px 
+    width: 130px 
+    background-color: rgba(241, 109, 127, 1) 
+    font-family: 'Lato' 
+    font-size: 15px 
+    color: rgba(255, 255, 255, 1) 
+    text-align: right 
+    letter-spacing: 0.03em 
+    line-height: 36px 
+    border: 1px solid rgba(241, 109, 127, 1) 
+ 
+
+.button img 
+    margin-right: 10px 
+    margin-left: 10px 
+ 
+
+.button span 
+    padding-top: 7px 
+ 
+
+.menu__link 
+    font-family: 'Lato' 
+    font-size: 14px 
+    font-weight: bold 
+    color: rgba(34, 34, 34, 1) 
+    line-height: 26px 
+    text-transform: uppercase 
+ 
+
+.button_product 
+    margin-left: 230px 
+    margin-right: 230px 
+    display: flex 
+    justify-content: center 
+    margin-top: 60px 
+    
+ 
+
+
+.button-center 
+    height: 48px 
+    width: 212px 
+    background-color: rgba(241, 109, 127, 1) 
+    font-family: 'Lato' 
+    font-size: 16px 
+    font-weight: bold 
+    color: rgba(255, 255, 255, 1) 
+    text-align: center 
+    letter-spacing: 0.03em 
+    line-height: 47px 
+ 
+
+.button-center img 
+    padding-left: 9px 
+ 
+
+.button_product-a 
+    display: flex 
+    width: 212px 
+    height: 48px 
+ 
+
+.banner 
+    height: 530px 
+    width: 1140px 
+    margin-top: 113px 
+    display: flex 
+    
+ 
+
+.banner-block 
+    height: 529px 
+    width: 767px 
+    background-image: url(img/banner.png)
+ 
+
+.banner-text-icon 
+    display: flex 
+    background-color: rgba(34, 34, 36, 1) 
+    width: 373px 
+    
+    
+ 
+.menu_product-box 
+    width: 100% 
+    display: flex 
+    justify-content: center
+ 
+.menu_product-banner-text-icon 
+    background-color: rgba(34, 34, 36, 1) 
+    width: 1600px 
+ 
+.menu_product-banner-icon 
+    display: flex 
+    justify-content: space-around 
+    padding-top: 89px 
+    padding-bottom: 30px 
+ 
+
+.menu_product-banner-text 
+    display: flex 
+    justify-content: space-around 
+    text-align: center 
+    padding-bottom: 144px 
+ 
+.banner-icon 
+    width: 111px 
+    height: 529px 
+    display: flex 
+    flex-direction: column 
+    justify-content: space-around 
+    align-items: center 
+ 
+.banner-text 
+    width: 262px 
+    height: 529px 
+    display: flex 
+    flex-direction: column 
+    justify-content: space-around 
+    height: 529px 
+    padding-right: 28px 
+ 
+
+.banner-text-h2 
+    font-family: 'Lato' 
+    font-size: 20px 
+    font-weight: bold 
+    color: rgba(251, 251, 251, 1) 
+    letter-spacing: 0.03em 
+ 
+
+.banner-text-p 
+    font-family: 'Lato' 
+    font-size: 14px 
+    font-weight: 300 
+    color: rgba(251, 251, 251, 1) 
+    letter-spacing: 0.03em 
+    line-height: 24px 
+ 
+
+.banner-block-text1 
+    font-family: 'Lato' 
+    font-size: 54px 
+    font-weight: bold 
+    color: rgba(255, 255, 255, 1) 
+    letter-spacing: 0.03em 
+ 
+
+.banner-block-text1 span 
+    font-family: 'Lato' 
+    font-size: 54px 
+    font-weight: bold 
+    color: rgba(241, 109, 127, 1) 
+    letter-spacing: 0.03em 
+ 
+
+.banner-block-text2 
+    font-family: 'Lato' 
+    font-size: 32px 
+    font-weight: bold 
+    color: rgba(255, 255, 255, 1) 
+    letter-spacing: 0.03em 
+
+ 
+
+.banner-block-text 
+    margin-left: 39px 
+    margin-top: 146px 
+ 
+
+.block-slider 
+    width: 100% 
+    height: 438px 
+    display: flex 
+    justify-content: center 
+    margin-top: 97px 
+ 
+.slider 
+    width: 1600px 
+    height: 438px 
+    background-image: url(img/slaider.png) 
+    
+ 
+
+.button:hover 
+    background-color: #ffffff 
+    color: rgba(241, 109, 127, 1) 
+    border: 1px solid rgba(241, 109, 127, 1) 
+ 
+.menu__list:hover .menu__link  
+    border-bottom: 3px solid rgba(241, 109, 127, 1) 
+ 
+
+.menu__link-active 
+    border-bottom: 3px solid rgba(241, 109, 127, 1) 
+ 
+
+.button-center:hover 
+    background-color: #ffffff 
+    color: rgba(241, 109, 127, 1) 
+    border: 1px solid rgba(241, 109, 127, 1) 
+ 
+
+.slider 
+    display: flex 
+ 
+.comment0 
+    margin-left: 230px 
+    margin-top: 111px 
+    margin-right: 28px 
+    
+ 
+.comment1 
+    margin-top: 123px 
+    width: 500px 
+    
+ 
+.comment-p 
+    font-size: 16px 
+    font-style: italic 
+    color: rgba(34, 34, 36, 1) 
+    letter-spacing: 0.03em 
+    line-height: 26px 
+ 
+
+.comment-name 
+    font-size: 16px 
+    font-weight: bold 
+    color: rgba(241, 109, 127, 1) 
+    letter-spacing: 0.03em 
+    line-height: 26px 
+    margin-top: 13px 
+ 
+
+.comment-name2 
+    font-size: 12px 
+    font-weight: 300 
+    color: rgba(34, 34, 36, 1) 
+    letter-spacing: 0.03em 
+    line-height: 14px 
+    margin-bottom: 18px 
+ 
+
+.button-slider 
+    height: 4px 
+    width: 38px 
+    margin-right: 13px 
+    background-color: rgba(214, 214, 214, 1) 
+    border: 1px solid rgba(230, 230, 230, 1) 
+ 
+
+.button-slider:hover 
+    background-color: rgba(241, 109, 127, 1) 
+    border: 1px solid rgba(241, 109, 127, 1)  
+    border-radius: 0px 3px 3px 0px 
+    
+ 
+
+.comment2 
+    margin-top: 148px 
+    margin-left: 113px 
+    margin-right: 230px 
+    width: 550px 
+ 
+
+
+.comment-subscribe-p 
+    margin-left: 55px 
+    font-size: 14px 
+    color: rgba(34, 34, 36, 1) 
+    letter-spacing: 0.03em 
+    margin-bottom: 35px 
+
+ 
+
+
+
+.comment-subscribe-h1 
+    font-size: 24px 
+    color: rgba(34, 34, 36, 1) 
+    letter-spacing: 0.03em 
+    line-height: 40px 
+    text-transform: uppercase 
+    margin-left: 126px 
+ 
+
+.comment2 input 
+    height: 45px 
+    width: 255px 
+    background-color: rgba(225, 225, 225, 1) 
+    border: 1px solid rgba(225, 225, 225, 1) 
+    border-radius: 35px 3px 3px 35px 
+    margin-right: -4px 
+ 
+
+.button-slider2 
+    height: 46px 
+    width: 104px 
+    background-color: rgba(241, 109, 127, 1) 
+    border-radius: 0px 23px 23px 0px 
+    border: 1px solid rgba(241, 109, 127, 1) 
+    font-size: 14px 
+    color: rgba(255, 255, 255, 1) 
+    text-align: center 
+    letter-spacing: 0.03em 
+ 
+
+input, .search, .comment2 input, .button-slider2:focus 
+    outline: none 
+ 
+
+input::placeholder 
+    padding-left: 10px 
+ 
+
+.comment2 input[type="text"] 
+    padding-left: 25px 
+ 
+
+.comment2 input[type="email"] 
+    padding-left: 25px 
+ 
+
+.search:hover 
+    background:rgba(232, 232, 232, 1) 
+ 
+
+.button-slider2:hover 
+    background-color: rgba(255, 255, 255, 1) 
+    color: rgba(241, 109, 127, 1) 
+    border: 1px solid rgba(255, 255, 255, 1) 
+ 
+
+.footer 
+    padding-top: 109px 
+ 
+
+.footer-menu 
+    display: flex 
+ 
+
+.footer-menu-info 
+    width: 703px 
+ 
+
+.footer-menu-list 
+    width: 100% 
+ 
+
+.footer-menu-list-ul1 
+    display: flex 
+    justify-content: space-evenly 
+    list-style-type: none 
+ 
+
+.footer-menu-list-ul2 
+    list-style-type: none 
+    margin-top: 45px 
+ 
+
+.footer-menu-link 
+    font-size: 18px 
+    font-weight: bold 
+    color: rgba(241, 109, 127, 1) 
+    text-align: left 
+    letter-spacing: 0.03em 
+    line-height: 26px 
+    
+ 
+
+.footer-menu-link2 
+    font-size: 16px 
+    color: rgba(137, 137, 137, 1) 
+    text-align: left 
+    letter-spacing: 0.03em 
+    line-height: 42px 
+ 
+
+.footer-menu-info-text 
+    font-size: 14px 
+    font-weight: 300 
+    color: rgba(137, 137, 137, 1) 
+    text-align: left 
+    letter-spacing: 0.03em 
+    line-height: 24px 
+    margin-top: 29px 
+ 
+
+.footer-menu-link 
+    text-decoration: none 
+ 
+
+.footer-menu-link:hover 
+    color: red 
+ 
+
+.footer-menu-link2:hover 
+    color: red 
+ 
+
+
+.footer-copyright 
+    background-color: rgba(230, 230, 230, 1) 
+    margin-top: 64px 
+ 
+.footer-copyright-box 
+    display: flex 
+    justify-content: space-between 
+    padding-bottom: 24px 
+    align-items:center 
+    padding-top: 24px 
+    
+    
+ 
+.footer-copyright-text-ul 
+    display: flex 
+    list-style-type: none 
+ 
+
+.footer-copyright-text-li 
+    margin-left: 5px 
+    &-a 
+        &-i    
+            padding: 10px 13px 
+            background-color: white 
+            color: rgba(241, 109, 127, 1) 
+        &-i:hover 
+            background-color: rgba(241, 109, 127, 1) 
+            color: white 
+ 
+
+.menu_product-banner-text-p 
+    padding-top: 17px 
+    width: 325px 
+ 
+
+.margin0 
+    margin-top: 0 
+ 
+
+.breadcrumb 
+    width: 100% 
+    background-color: rgba(248, 243, 244, 1) 
+ 
+
+.breadcrumb-text 
+    display: flex 
+    justify-content: space-between 
+    padding-bottom: 65px 
+    padding-top: 65px 
+ 
+.breadcrumb-text-ul 
+    display: flex 
+    list-style-type: none 
+    align-items: center 
+ 
+ 
+
+.breadcrumb-text-h1 
+    font-size: 24px 
+    font-weight: 900 
+    color: rgba(241, 109, 127, 1) 
+    text-align: center 
+    text-transform: uppercase 
+    text-decoration: none 
+ 
+
+
+.breadcrumb-text-link 
+    text-decoration: none 
+    font-size: 14px 
+    font-weight: 300 
+    color: rgba(99, 99, 99, 1) 
+    text-transform: uppercase 
+ 
+
+.breadcrumb-text-link-active 
+    font-size: 14px 
+    font-weight: bold 
+    color: rgba(241, 109, 127, 1) 
+    text-transform: uppercase 
+ 
+
+.breadcrumb-text-link:hover 
+    font-size: 14px 
+    color: rgba(241, 109, 127, 1) 
+    text-transform: uppercase 
+ 
+
+
+
+.menu__list 
+    position: relative 
+ 
+
+.drop-ul  
+    list-style: none
+ 
+
+.drop-col  
+    margin-right: 46px 
+ 
+
+
+
+ul 
+    list-style-type: none 
+    
+ 
+
+.dropdown1 
+    width: 243px 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2) 
+    text-align-last: justify 
+    margin-bottom: 30px 
+    
+   
+ 
+.dropdown2 a  
+    font-size: 14px 
+    color: rgba(111, 110, 110, 1) 
+    line-height: 33px 
+ 
+.dropdown2 
+    padding-left: 17px   
+    width: 243px 
+    display: none 
+ 
+
+
+.border-left 
+    width: 5px 
+    height: 36px 
+    border-left: 5px solid rgba(239, 91, 112, 1) 
+    position: absolute 
+ 
+
+.dropdown1 span 
+    margin-left: 14px 
+    font-size: 14px 
+    font-weight: bold 
+    color: rgba(111, 110, 110, 1) 
+    line-height: 20px 
+    text-transform: uppercase 
+ 
+
+.dropdown1:hover span 
+    
+    color: rgba(239, 91, 112, 1) 
+  
+ 
+.dropdown1:hover .dropdown2  
+    display: flex 
+ 
+
+.dropdown-box, .product-product-box 
+    margin-top: 59px 
+ 
+
+.icon-hover i 
+    color: black 
+    padding: 11px
+ 
+
+.icon-hover-active 
+    display: none
+
+.icon-hover-active i
+    padding: 11px
+
+ 
+
+.dropdown1:hover .icon-hover 
+    display: none 
+ 
+
+.dropdown1:hover .icon-hover-active 
+    display: contents 
+
+
+ 
+
+
+.conteiner 
+    display: flex 
+ 
+
+
+
+
+.product-product-box, .product-filter 
+    width: 100% 
+ 
+
+
+.product-filter-top 
+    font-size: 14px 
+    color: rgba(111, 110, 110, 1) 
+    line-height: 26px 
+    display: flex 
+    justify-content: space-between 
+ 
+
+.product-filter-top-style-h1 
+    font-size: 14px 
+    font-weight: bold 
+    color: rgba(111, 110, 110, 1) 
+    line-height: 20px 
+    text-transform: uppercase 
+    margin-bottom: 25px 
+ 
+
+.product-filter-top1 
+    width: 176px 
+ 
+.product-filter-top2 
+    width: 222px 
+    
+ 
+.input-checkbox-product 
+    margin-right: 6px 
+    margin-left: 14px 
+ 
+.product-filter-top2-h1 
+    margin-left: 14px 
+ 
+
+.product-filter-botton 
+    width: 100% 
+    height: 50px 
+    background-color: rgba(243, 243, 243, 1) 
+    margin-bottom: 59px 
+    margin-top: 42px 
+ 
+
+.product-filter 
+    margin-left: 50px 
+ 
+
+.product-pagination-button 
+    display: flex 
+    justify-content: space-between 
+    margin-bottom: 110px 
+ 
+
+.product-pag-button 
+    text-align: center 
+    border-radius: 10px 10px 
+    background-color: white 
+    color: rgba(241, 109, 127, 1) 
+    
+ 
+.product-pag-button:hover 
+    background-color: rgba(241, 109, 127, 1) 
+    color: white 
+ 
+
+.product-pagination 
+    background-color: rgba(255, 255, 255, 1) 
+    border: 1px solid rgba(235, 235, 235, 1) 
+    border-radius: 3px 
+    width: 261px 
+    text-align-last: justify 
+    
+    
+
+.product-pagination-text 
+    font-size: 16px 
+    font-weight: 300 
+    color: rgba(196, 196, 196, 1) 
+    line-height: 26px 
+ 
+.product-pagination-text:hover 
+    color: rgba(239, 91, 112, 1) 
+ 
+
+
+.icon-pagination-product i 
+    background: white 
+    color: black 
+    padding: 11px
+ 
+.icon-pagination-product i:hover 
+    
+    color: rgba(239, 91, 112, 1) 
+ 
+
+.product-filter-botton 
+    display: flex 
+    align-items: center 
+    padding-left: 9px 
+ 
+
+.product-filter-botton-span 
+    background-color: white 
+    border: 1px solid rgba(230, 230, 230, 1) 
+    font-size: 14px 
+    color: rgba(111, 110, 110, 1) 
+    line-height: 26px 
+    padding-left: 5px 
+    padding-right: 5px
+ 
+
+.menu__list:hover .drop  
+    display: flex 
+ 
+.drop  
+    position: absolute 
+    background-color: #ffffff 
+    border-radius: 5px 
+    padding: 20px 
+    display: none 
+    top: 48px 
+ 
+.drop_last  
+    right: 0 
+
+.drop__col  
+    margin-right: 46px 
+
+.drop__a__col:last-of-type  
+    margin-right: 0 
+
+.drop__h3  
+    font-size: 14px 
+    color: #232323 
+    letter-spacing: 0.03em 
+    line-height: 32px 
+    text-transform: uppercase 
+    border-bottom: 1px solid #e8e8e8 
+    margin-bottom: 8px 
+    width: 234px 
+
+.drop__a__ul  
+    list-style: none 
+
+.drop__a  
+    font-size: 14px 
+    color: #646464 
+    text-align: right 
+    letter-spacing: 0.03em 
+    line-height: 28px 
+
+.drop__a:hover  
+    color: #f16d7f 
+ 
+
+.form-slider input
+    background-color: rgba(225, 222, 219, 1)
+
+.shoppingCart
+    margin-top: 90px
+    &-ul
+        display: flex
+        justify-content: space-between
+    &-ul li:first-child
+        margin-right: 320px
+    &-li 
+        font-size: 13px
+        font-weight: bold
+        color: rgba(34, 34, 34, 1)
+        letter-spacing: -0.01em
+        line-height: 20px
+        text-transform: uppercase
+    &__hr
+        margin: 25px 0 26px 0
+        &__styleblock3
+            margin: 0 41px 22px 41px
+        
+    &__productDetails
+        margin-top: 24px
+        display: flex
+        justify-content: space-between
+        
+        
+        &__product
+            display: flex
+            &__block
+                &__text
+                    margin: 13px 0 0 13px
+                    &__h3
+                        font-size: 13px
+                        color: rgba(34, 34, 34, 1)
+                        text-align: right
+                        text-transform: uppercase
+                        margin-bottom: 30px
+                    &__p
+                        font-size: 13px
+                        font-weight: 300
+                        color: rgba(111, 110, 110, 1)
+                        line-height: 20px
+                    &__p span
+                        color: rgba(87, 87, 87, 1)
+                        font-weight: 400
+        &__details
+            width: 52%
+            padding-right: 18px
+            &__ul
+                display: flex
+                width: 100%
+                height: 100%
+                justify-content: space-between
+                align-items: center
+                &__li
+                    font-size: 13px
+                    color: rgba(101, 101, 101, 1)
+                    line-height: 20px
+                &__li input
+                    width: 54px
+                    height: 30px
+                &__li input::placeholder
+                    text-align: center
+                    padding-left: 0px
+                &__li input[type="text"]
+                    text-align: center
+                &__li a
+                    text-decoration: none
+                    color: rgba(101, 101, 101, 1)
+    &__blockButton
+        display: flex
+        justify-content: space-between
+        &__button
+            margin-top: 25px
+            padding: 0 20px
+            height: 40px
+            font-size: 14px
+            font-weight: bold
+            color: rgba(74, 74, 74, 1)
+            text-transform: uppercase
+            background-color: rgba(255, 255, 255, 1)
+            border: 1px solid rgba(234, 234, 234, 1)
+        &__button:focus
+            outline: none
+            
+.shoppingCart__blockDelivery
+    display: flex
+    justify-content: space-between
+    margin-top: 61px
+    &__delivery
+        
+        &__styleblock3
+            background-color: rgba(245, 243, 243, 1)
+            width: 360px
+            height: 228px
+            text-align: end
+            &__button
+                text-align: center
+            &__button button 
+                width: 273px
+                height: 50px
+                background-color: rgba(241, 109, 127, 1)
+                
+                border: 1px solid rgba(241, 109, 127, 1)
+                border-radius: 2px
+                font-size: 16px
+                font-weight: bold
+                color: rgba(255, 255, 255, 1)
+                text-transform: uppercase
+                        
+        &__h3
+            font-size: 16px
+            font-weight: bold
+            color: rgba(34, 34, 34, 1)
+            text-transform: uppercase
+            margin-bottom: 22px
+            &__styleblock3
+                margin: 0 41px 22px 0
+            
+        &__h3 span
+            color: rgba(241, 109, 127, 1)
+        &__p
+            font-size: 14px
+            font-weight: 300
+            color: rgba(0, 0, 0, 1)
+            margin-bottom: 24px
+            &__styleblock3
+                margin: 40px 41px 14px 0
+        &__form__ul
+            &__li
+                padding-bottom: 20px
+            &__li input
+                width: 345px
+                height: 45px
+            &__li input[type="text"]
+                padding-left: 10px
+            &__li input::placeholder
+                padding: 0
+                color: rgba(177, 177, 177, 1)
+
+           
+            &__li select 
+                width: 359px
+                height: 49px
+                padding-left: 5px
+                font-size: 13px
+                font-weight: 300
+                color: rgba(177, 177, 177, 1)
+               
+
+            &__li button 
+                margin-top: 25px
+                padding: 0 20px
+                height: 40px
+                font-size: 11px
+                font-weight: bold
+                color: rgba(74, 74, 74, 1)
+                text-transform: uppercase
+                background-color: rgba(255, 255, 255, 1)
+                border: 1px solid rgba(234, 234, 234, 1)
+.checkOut  
+    padding-top: 90px
+    padding-bottom: 80px     
+    &__block
+        border-bottom: 1px solid rgba(232, 232, 232, 1)
+        &__h3
+            font-size: 16px
+            font-weight: 900
+            color: rgba(34, 34, 34, 1)
+            text-transform: uppercase
+            padding: 34px 0px
+        &__form
+            display: none
+            margin-left: 35px
+            margin-bottom: 80px
+            margin-top: 16px
+            &__text label
+                display: block
+                font-size: 12px
+                color: rgba(34, 34, 34, 1)
+                text-transform: uppercase
+                padding: 10px 0
+                font-weight: bold
+            &__text
+                width: 50%
+                &__h3
+                    font-size: 13px
+                    color: rgba(34, 34, 34, 1)
+                    text-transform: uppercase
+                    margin-bottom: 15px
+                    margin-top: 23px
+                &__p
+                    font-size: 13px
+                    color: rgba(179, 178, 178, 1)
+                    line-height: 20px
+                    padding-bottom: 24px
+                    &__email-password span
+                        color: red
+                    &__email-password
+                        font-size: 12px
+                        color: rgba(34, 34, 34, 1)
+                        line-height: 20px
+                        padding-bottom: 16px
+                        font-weight: bold
+                        &__input
+                            +inputForm
+                            
+                        &__color
+                            font-size: 13px
+                            color: rgba(255, 13, 13, 1)
+                            line-height: 20px
+                            font-weight: bold
+                        &__a
+                            font-size: 14px
+                            color: rgba(34, 34, 34, 1)
+                            line-height: 20px
+                            text-transform: none
+                            margin-left: 32px
+
+                &__ul
+                    margin-top: 9px
+                    &__li
+                        font-family: 'Lato'
+                        font-size: 13px
+                        color: rgba(179, 178, 178, 1)
+                        line-height: 20px
+                        margin-bottom: 10px
+                &__button
+                    +button
+
+.checkOut__block:hover .checkOut__block__form
+    display: flex
+
+
+    
+
+
+
+           
+
+
+
+
+    
+
+        
+
