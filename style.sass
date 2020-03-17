@@ -32,7 +32,7 @@ a
 .header__form 
     display: flex 
     align-items: center 
- 
+
 
 .header__cart  
     margin-right: 26px 
@@ -64,6 +64,14 @@ a
     background-color: #e8e8e8 
     background-image: url(img/promo-back.png) 
     background-position: center -51px 
+    background-repeat: no-repeat 
+
+.promo2
+    height: 777px 
+    
+    background-color: rgba(247, 247, 247, 1)
+    background-image: url(img/promo-back2.png) 
+    background-position: center
     background-repeat: no-repeat 
  
 
@@ -380,18 +388,109 @@ a
     text-align: right 
     letter-spacing: 0.03em 
     line-height: 36px 
-    border: 1px solid rgba(241, 109, 127, 1) 
- 
+    border: 1px solid rgba(241, 109, 127, 1)
+    border-radius: 5px
+    &__button
+        &__span
+            margin: 0px 10px
+            &__iconDown
+            &__iconUp
+                display: none
+            &__iconUp a
+                color: rgba(241, 109, 127, 1)
+    &__button img 
+        margin-right: 10px 
+        margin-left: 10px 
+    &__button span 
+        padding-top: 7px
+    &__cart
+        margin: 18px -70px
+        padding: 14px 14px 14px 14px
+        background-color: rgba(255, 255, 255, 1)
+        display: none
+        &__product
+            display: flex
+            background-color: rgba(255, 255, 255, 1)
+            border-bottom: 1px solid rgba(237, 237, 237, 0.75)
+            margin-bottom: 14px
+            &__img
+            &__text
+                padding-top: 10px
+                padding-left: 15px
+                &__h3
+                    font-size: 12px
+                    font-weight: bold
+                    text-align: left
+                    text-transform: uppercase
+                    line-height: normal
+                    padding-bottom: 10px
+                &__h3 a
+                    color: rgba(34, 34, 34, 1)
+                &__p
+                    font-size: 12px
+                    color: rgba(228, 175, 72, 1)
+                    text-align: left
+                    text-transform: uppercase
+                    line-height: normal
+                    padding-bottom: 10px
+                    &__color
+                        color: rgba(241, 109, 127, 1)
+                    &__color span
+                        font-size: 10px
+            &__span
+                &__a i
+                    color: rgba(192, 192, 192, 1)
+                &__a:hover i
+                    color: rgba(241, 109, 127, 1)   
+        &__product span
+            width: 27%
+            align-self: center
+        &__ul
+            display: flex
+            justify-content: space-between
+            margin-bottom: 25px
+            &__li
+                font-size: 16px
+                font-weight: bold
+                color: rgba(34, 34, 34, 1)
+                text-transform: uppercase
+        &__ulButton
+            text-align: center
+            &__li
+                +button
+                padding-top: 5px
+                padding-bottom: 5px
+            &__li:hover
+                border: 1px solid rgba(241, 109, 127, 1)
+            &__li a 
+                font-size: 14px
+                font-weight: bold
+                color: rgba(74, 74, 74, 1)
+                text-transform: uppercase
+            &__li:hover a
+                color: rgba(241, 109, 127, 1)
+.button:focus .button__cart
+    display: block
+    position: relative
 
-.button img 
-    margin-right: 10px 
-    margin-left: 10px 
- 
+.button:focus .button__button__span__iconDown
+    display: none
 
-.button span 
-    padding-top: 7px 
- 
+.button:focus .button__button__span__iconUp
+    display: inline
 
+
+.button:focus
+    outline: none
+    background-color: #ffffff 
+    color: rgba(241, 109, 127, 1) 
+    border: 1px solid rgba(241, 109, 127, 1)
+    
+    
+.button__cart__ulButton__li__margin
+    margin-top: 11px           
+
+                                
 .menu__link 
     font-family: 'Lato' 
     font-size: 14px 
@@ -399,7 +498,7 @@ a
     color: rgba(34, 34, 34, 1) 
     line-height: 26px 
     text-transform: uppercase 
- 
+
 
 .button_product 
     margin-left: 230px 
@@ -951,6 +1050,10 @@ ul
 .dropdown1:hover .icon-hover-active 
     display: contents 
 
+.dropdown-product-li2:hover a
+    color: rgba(241, 109, 127, 1)
+
+
 
  
 
@@ -1152,12 +1255,14 @@ ul
             &__block
                 &__text
                     margin: 13px 0 0 13px
-                    &__h3
+                    &__h3 a
                         font-size: 13px
                         color: rgba(34, 34, 34, 1)
                         text-align: right
                         text-transform: uppercase
                         margin-bottom: 30px
+                    &__h3:hover a
+                        color: rgba(241, 109, 127, 1)
                     &__p
                         font-size: 13px
                         font-weight: 300
@@ -1182,14 +1287,20 @@ ul
                 &__li input
                     width: 54px
                     height: 30px
+                &__li input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button
+                    -webkit-appearance: none
+                    margin: 0
                 &__li input::placeholder
                     text-align: center
                     padding-left: 0px
-                &__li input[type="text"]
+                &__li input[type="number"]
                     text-align: center
+                    -moz-appearance:textfield
                 &__li a
                     text-decoration: none
                     color: rgba(101, 101, 101, 1)
+                &__li a:hover i 
+                    color: rgba(241, 109, 127, 1)
     &__blockButton
         display: flex
         justify-content: space-between
@@ -1203,6 +1314,12 @@ ul
             text-transform: uppercase
             background-color: rgba(255, 255, 255, 1)
             border: 1px solid rgba(234, 234, 234, 1)
+        &__button:hover
+            color: rgba(241, 109, 127, 1)
+            border: 1px solid rgba(241, 109, 127, 1)
+        &__button:active
+            color: #d12239
+            border: 1px solid #d12239
         &__button:focus
             outline: none
             
@@ -1230,6 +1347,15 @@ ul
                 font-weight: bold
                 color: rgba(255, 255, 255, 1)
                 text-transform: uppercase
+            &__button button:hover
+                background-color: rgba(245, 243, 243, 1)
+                color: rgba(241, 109, 127, 1)
+            &__button button:focus
+                outline: none
+            &__button button:active
+                color: #d12239
+                border: 1px solid #d12239
+
                         
         &__h3
             font-size: 16px
@@ -1281,6 +1407,15 @@ ul
                 text-transform: uppercase
                 background-color: rgba(255, 255, 255, 1)
                 border: 1px solid rgba(234, 234, 234, 1)
+            &__li__button:hover
+                color: rgba(241, 109, 127, 1)
+                border: 1px solid rgba(241, 109, 127, 1)
+            &__li__button:active
+                color: #d12239
+                border: 1px solid #d12239
+            &__li__button:focus
+                outline: none
+                
 .checkOut  
     padding-top: 90px
     padding-bottom: 80px     
@@ -1354,9 +1489,124 @@ ul
 .checkOut__block:hover .checkOut__block__form
     display: flex
 
+.singlePage
+    display: flex
+    justify-content: center
+    background-color: rgba(255, 255, 255, 1)
+    margin: -70px calc(50% - 570px)
+    padding-bottom: 70px
+    border: 1px solid rgba(234, 234, 234, 1)
+    &__block
+        width: 655px
+        text-align: center
+        padding-top: 60px
+        &__p
+            &__collection
+                font-size: 14px
+                font-weight: bold
+                color: rgba(241, 109, 127, 1)
+                text-align: center
+                line-height: 24px
+            &__text
+                font-size: 14px
+                font-weight: 300
+                color: rgba(94, 94, 94, 1)
+                text-align: center
+                line-height: 24px
+                padding-top: 60px
+            &__price
+                font-size: 24px
+                font-weight: bold
+                color: rgba(239, 91, 112, 1)
+                text-align: center
+                line-height: 24px
+        &__h3
+            font-size: 18px
+            font-weight: 900
+            color: rgba(77, 77, 77, 1)
+            text-align: center
+            line-height: 24px
+            text-transform: uppercase
+        &__ul
+            display: flex
+            justify-content: center
+            &__li
+                font-size: 14px
+                font-weight: bold
+                color: rgba(185, 185, 185, 1)
+                text-align: center
+                line-height: 24px
+                padding: 30px 22px
+            &__li span
+                color: rgba(47, 47, 47, 1)
+        &__input
+            display: flex
+            justify-content: center
+            text-align: left
+            margin-top: 43px
+            &__box
+                width: 617px
+                border-top: 1px solid rgba(234, 234, 234, 1)
+                padding-top: 45px
+                display: flex
+                justify-content: space-around
+                padding-top: 63px
+            &__block
+                padding: 0 15px
+                &__h3
+                    font-size: 14px
+                    font-weight: bold
+                    color: rgba(47, 47, 47, 1)
+                    line-height: 24px           
+            &__block select  
+                +singlepageInput
+            &__block input  
+                +singlepageInput
+                width: 116px
+                height: 33px
+            &__block input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button
+                -webkit-appearance: none
+                margin: 0
+            &__block input[type=number]
+                text-align: left
+                -moz-appearance:textfield
+            &__block input::placeholder
+                text-align: left
+                padding-left: 0px
+                color: rgba(188, 188, 188, 1)
+    &__block button 
+        +button
+        text-transform: none
+        width: 542px
+        height: 55px
+        font-size: 16px
+        font-weight: bold
+        margin-bottom: 122px
+    &__block button:hover
+        color: rgba(241, 109, 127, 1)
+        border: 1px solid rgba(241, 109, 127, 1)
+    &__block button:active
+        color: #d12239
+        border: 1px solid #d12239
+    &__block button:focus
+        outline: none
+.singlePage__block__input__block__select__option__i
+    color: red
+        
+.singlePage-product
+    margin-top: 70px
+    padding-top: 120px
+    &__h3
+        font-size: 24px
+        font-weight: 900
+        color: rgba(77, 77, 77, 1)
+        text-align: center
+        line-height: 20px
+        text-transform: uppercase
+        margin-bottom: 60px
+
 
     
-
 
 
            
