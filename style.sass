@@ -1,4 +1,5 @@
 @import "mixins"
+@import "animation"
     
 *  
     margin: 0 
@@ -64,7 +65,7 @@ a
     background-color: #e8e8e8 
     background-image: url(img/promo-back.png) 
     background-position: center -51px 
-    background-repeat: no-repeat 
+    background-repeat: no-repeat
 
 .promo2
     height: 777px 
@@ -79,7 +80,8 @@ a
     margin-top: 224px 
     float: left 
     border-left: 12px solid #f16d7f 
-    padding-left: 12px 
+    padding-left: 12px
+    transition: border-left 1s
  
 
 .promo__h1  
@@ -89,6 +91,7 @@ a
     letter-spacing: 0.03em 
     line-height: 45px 
     margin-bottom: 12px 
+
  
 
 .promo__h2  
@@ -97,7 +100,10 @@ a
     color: #222222 
     letter-spacing: 0.03em 
     line-height: 33px 
- 
+
+.promo__h2 span
+    transition: all 1s
+    color: rgba(241, 109, 127, 1)
 
 .content-block 
     height: 823px 
@@ -226,20 +232,25 @@ a
 .product  
     width: 263px 
     margin-bottom: 39px 
-    position: relative 
+    position: relative
+     
  
 
 .product-box  
     display: flex 
     flex-wrap: wrap 
-    justify-content: space-between 
+    justify-content: space-between
+     
  
 
 .product:hover  
-    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16) 
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+   
+    
  
 
-.product:hover .product__img  
+.product:hover .product__img 
+    transition: all 1s 
     filter: brightness(40%) 
  
 
@@ -875,6 +886,13 @@ input::placeholder
 .footer-copyright 
     background-color: rgba(230, 230, 230, 1) 
     margin-top: 64px 
+    &-text 
+        font-size: 16px
+        color: rgba(122, 122, 122, 1)
+        text-align: right
+        letter-spacing: 0.03em
+        line-height: 42px
+ 
  
 .footer-copyright-box 
     display: flex 
@@ -901,7 +919,16 @@ input::placeholder
             background-color: rgba(241, 109, 127, 1) 
             color: white 
  
-
+.fa-google-plus
+    padding: 10px 8px 10px 10px
+.fa-pinterest-p
+    padding: 10px 12px 10px 12px
+.fa-facebook
+    padding: 10px 14px 10px 14px
+.fa-twitter
+    padding: 10px 11px 10px 11px
+.fa-linkedin
+    padding: 10px 12px 10px 12px
 .menu_product-banner-text-p 
     padding-top: 17px 
     width: 325px 
@@ -1023,8 +1050,8 @@ ul
   
  
 .dropdown1:hover .dropdown2  
-    display: flex 
- 
+    display: flex
+
 
 .dropdown-box, .product-product-box 
     margin-top: 59px 
@@ -1193,7 +1220,8 @@ ul
     right: 0 
 
 .drop__col  
-    margin-right: 46px 
+    margin-right: 46px
+    position: relative
 
 .drop__a__col:last-of-type  
     margin-right: 0 
@@ -1432,6 +1460,7 @@ ul
             margin-left: 35px
             margin-bottom: 80px
             margin-top: 16px
+            animation: checkoutBlock 2s
             &__text label
                 display: block
                 font-size: 12px
@@ -1488,6 +1517,7 @@ ul
 
 .checkOut__block:hover .checkOut__block__form
     display: flex
+    
 
 .singlePage
     display: flex
@@ -1606,7 +1636,7 @@ ul
         margin-bottom: 60px
 
 
-    
+            
 
 
            
