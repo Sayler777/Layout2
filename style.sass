@@ -670,10 +670,10 @@ a
     background-color: #ffffff 
     color: rgba(241, 109, 127, 1) 
     border: 1px solid rgba(241, 109, 127, 1) 
- 
+.menu__list__last
+    position: relative
 .menu__list:hover .menu__link  
     border-bottom: 3px solid rgba(241, 109, 127, 1) 
- 
 
 .menu__link-active 
     border-bottom: 3px solid rgba(241, 109, 127, 1) 
@@ -987,12 +987,6 @@ input::placeholder
     text-transform: uppercase 
  
 
-
-
-.menu__list 
-    position: relative 
- 
-
 .drop-ul  
     list-style: none
  
@@ -1215,9 +1209,12 @@ ul
     padding: 20px 
     display: none 
     top: 48px 
- 
+    margin-top: 100px 
+
 .drop_last  
+    position: absolute
     right: 0 
+    margin-top: 0px
 
 .drop__col  
     margin-right: 46px
