@@ -1,6 +1,6 @@
 .tracking-in-expand-fwd-top {
-  -webkit-animation: tracking-in-expand-fwd-top 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand-fwd-top 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  -webkit-animation: tracking-in-expand-fwd-top 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: tracking-in-expand-fwd-top 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @-webkit-keyframes tracking-in-expand-fwd-top {
@@ -28,8 +28,8 @@
 }
 
 .tracking-in-expand-fwd-bottom {
-  -webkit-animation: tracking-in-expand-fwd-bottom 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand-fwd-bottom 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  -webkit-animation: tracking-in-expand-fwd-bottom 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: tracking-in-expand-fwd-bottom 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @-webkit-keyframes tracking-in-expand-fwd-bottom {
@@ -135,8 +135,8 @@
 }
 
 .text-focus-in {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 
 @-webkit-keyframes text-focus-in {
@@ -1250,9 +1250,9 @@ input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 63px;
   list-style-type: none;
 }
 
@@ -1554,7 +1554,7 @@ ul {
 }
 
 .product-filter-top2 {
-  width: 222px;
+  width: 240px;
 }
 
 .input-checkbox-product {
@@ -1661,14 +1661,13 @@ ul {
   border-radius: 5px;
   padding: 20px;
   display: none;
-  top: 48px;
-  margin-top: 100px;
 }
 
 .drop_last {
   position: absolute;
   right: 0;
   margin-top: 0px;
+  width: 830px;
 }
 
 .drop__col {
